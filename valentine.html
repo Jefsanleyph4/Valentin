@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Saint Valentin 💌</title>
+<style>
+body {
+    background: linear-gradient(to right, #ff4e50, #ff9a9e);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 20%;
+}
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    color: #ff4e50;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>💖 Surprise de la Saint-Valentin 💖</h1>
+<button onclick="askName()">Clique ici 💌</button>
+
+<script>
+function askName() {
+    var name = prompt("Entre ton nom 💌");
+    if (name != null && name != "") {
+        document.body.innerHTML = 
+        "<h1>💖 Happy Valentine's Day, " 
+        + name + "! 💌</h1>";
+    }
+}
+</script>
+
+</body>
+</html>
